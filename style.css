@@ -5,6 +5,8 @@ jet: rgba(47, 56, 51, 1);
 light gray: rgba(208, 204, 208, 1);
 white: rgba(251, 252, 255, 1);
 wenge: rgba(96, 88, 86, 1);
+
+vermillion: rgba(213, 58, 42, 1);
 */
 
 . {
@@ -22,7 +24,6 @@ body {
 .header {
     height: 500px;
     width: 100%;
-    background-image: url(images/background-home.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,16 +31,22 @@ body {
 
 .main{
     padding: 50px;
+    background-image: url(images/tile-sayagata.png);
+}
+
+.center-750px{
+    max-width: 750px;
+    margin: auto;
 }
 
 .footer {
     padding: 40px 70px;
-    background-color: rgba(96, 88, 86, 1);
+    background-color: rgba(213, 58, 42, 1);
 }
 
 
 nav {
-    height: 55px;
+    height: 50px;
     width: 100%;
 }
 
@@ -47,7 +54,7 @@ nav ul{
     list-style-type: none;
     width: inherit;
     height: inherit;
-    background-color: rgba(251, 252, 255, 0.75);
+    background-color: rgba(251, 252, 255, 0.8);
     overflow: hidden;
     float: right;
     margin: auto;
@@ -56,30 +63,38 @@ nav ul{
 nav ul li{
     float: left;
     padding: 0px 10px;
-    margin: auto;
 }
 
 nav ul li a{
     text-align: center;
-    padding: 5px 10px;
+    padding: 3px 30px;
     text-decoration: none;
     height: inherit;
     display: block;
-    color: rgba(47, 56, 51, 1)
+    color: rgba(47, 56, 51, 1);
 }
 
 nav ul li a:hover{
     background-color: rgba(251, 252, 255, .5);
 }
 
-.main-logo{
-    margin: 10% auto auto auto;
-    display:block;
+li.right{
+    float:right;
+}
+
+.top-nav-home{
+    
+}
+
+.hero-center{
+    margin: auto auto auto auto;
+    display: block;
 }
 
 h1{
     font-family: 'Bungee', cursive;
     font-size: 1em;
+    letter-spacing: .05em;
 }
 
 p{
