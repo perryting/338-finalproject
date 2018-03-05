@@ -1,34 +1,43 @@
+/*
+bronze: rgba(201, 117, 55, 1);
+jet: rgba(47, 56, 51, 1);
+light gray: rgba(208, 204, 208, 1);
+white: rgba(251, 252, 255, 1);
+wenge: rgba(96, 88, 86, 1);
+*/
+
 . {
-    margin: 0px;
-    padding: 0px;
+    margin: 0 px;
 }
 
 body {
-    background-color: red;
+    background-color: rgba(251, 252, 255, 1);
 }
 
-header {
+.header {
     height: 500px;
+    width: 100%;
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
-.nav-div {
-    width: inherit;
-    background-color: whitesmoke;
+.footer {
+    padding: 40px 70px;
+    background-color: rgba(96, 88, 86, 1);
 }
 
 nav {
-    width: inherit;
-    height: 50 px;
-    background-color: cyan;
+    height: 75px;
+    width: 100%;
 }
 
 nav ul{
     list-style-type: none;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(251, 252, 255, 0.75);
     overflow: hidden;
-    float: right;
 }
 
 nav ul li{
@@ -36,10 +45,23 @@ nav ul li{
     padding: 0px 10px;
 }
 
+nav ul li a{
+    text-align: center;
+    padding: 5px 12px;
+    text-decoration: none;
+    display: block;
+    color: rgba(47, 56, 51, 1)
+}
+
+nav ul li a:hover{
+    background-color: rgba(251, 252, 255, .5);
+}
+
 .main-logo{
-    margin: auto;
+    vertical-align: middle;
 }
 
 h1{
     font-family: 'Bungee', cursive;
+    font-size: 1em;
 }
