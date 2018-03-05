@@ -8,13 +8,15 @@ wenge: rgba(96, 88, 86, 1);
 */
 
 . {
-    margin: 0 px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
     background-color: rgba(251, 252, 255, 1);
     /*min-width: 900px;
     max-width: 200px;*/
+    margin: 0px;
 }
 
 .header {
@@ -48,17 +50,20 @@ nav ul{
     background-color: rgba(251, 252, 255, 0.75);
     overflow: hidden;
     float: right;
+    margin: auto;
 }
 
 nav ul li{
     float: left;
     padding: 0px 10px;
+    margin: auto;
 }
 
 nav ul li a{
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
+    height: inherit;
     display: block;
     color: rgba(47, 56, 51, 1)
 }
@@ -68,7 +73,8 @@ nav ul li a:hover{
 }
 
 .main-logo{
-    margin: auto;
+    margin: 10% auto auto auto;
+    display:block;
 }
 
 h1{
@@ -77,5 +83,8 @@ h1{
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-size: .9em;
+    letter-spacing: .025em;
+    line-height: 1.8em;
 }
