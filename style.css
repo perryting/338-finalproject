@@ -1,0 +1,45 @@
+. {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: red;
+}
+
+header {
+    height: 500px;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.nav-div {
+    width: inherit;
+    background-color: whitesmoke;
+}
+
+nav {
+    width: inherit;
+    height: 50 px;
+    background-color: cyan;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    padding: 0px 10px;
+}
+
+.main-logo{
+    margin: auto;
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+}
