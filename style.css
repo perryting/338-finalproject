@@ -37,13 +37,34 @@ body {
 }
 
 .main{
+    background-color: rgba(250,250,250,1);
     padding: 50px;
+}
+
+.main#alt{
     background-image: url(images/tile-sayagata.png);
 }
 
 .center-800px{
-    max-width: 750px;
+    max-width: 800px;
     margin: auto auto;
+}
+
+.center-1000px{
+    max-width: 1000px;
+    margin: auto auto;
+}
+
+.left-half{
+    width: 45%;
+    float: left;
+    display: inline-block;
+}
+
+.right-half{
+    width: 45%;
+    float: right;
+    display: inline-block;
 }
 
 .footer {
@@ -84,7 +105,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: rgba(213, 58, 42, .8);
+    background-color: rgba(213, 58, 42, 1);
     color: #fff;
 }
 
@@ -92,14 +113,14 @@ li.right{
     float:right;
 }
 
-.top-nav-home{
-    
-}
-
 .hero-center{
     display: block;
     margin: auto auto;
-    margin-top: 25vh;
+    margin-top: 19vh;
+}
+
+tr td:first-child{
+    width:300px;
 }
 
 h0{ /* titles of pages besides index */
@@ -107,7 +128,6 @@ h0{ /* titles of pages besides index */
     font-size: 6em;
     letter-spacing: .05em;
     color: rgba(255,255,255,1);
-    margin-top: 25vh;
 }
 
 h1{ /* for nav bar use */
@@ -116,14 +136,26 @@ h1{ /* for nav bar use */
     letter-spacing: .05em;
 }
 
-h2{ /* subtitles */
+h2{ /* sub titles */
     font-family: 'Merriweather', serif;
     font-weight: 900;
     letter-spacing: .03em;
-    
 }
 
-p{ /* text */
+h2 a{
+    color: rgba(213, 58, 42, 1);
+}
+
+h3{ /* menu sub titles */
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: rgba(213, 58, 42, 1);
+}
+
+p, td{ /* text */
     font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: .9em;
