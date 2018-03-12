@@ -4,6 +4,7 @@ bronze: rgba(201, 117, 55, 1);
 jet: rgba(47, 56, 51, 1);
 light gray: rgba(208, 204, 208, 1);
 white: rgba(251, 252, 255, 1);
+off-white: rgba(247, 247, 239, 1);
 wenge: rgba(96, 88, 86, 1);
 
 vermillion: rgba(213, 58, 42, 1);
@@ -16,17 +17,23 @@ vermillion: rgba(213, 58, 42, 1);
 
 body {
     background-color: rgba(251, 252, 255, 1);
-    /*min-width: 900px;
-    max-width: 200px;*/
     margin: 0px;
 }
 
 .header {
-    height: 500px;
     width: 100%;
-    background-position: center;
-    background-size: cover;
+    background-position: center, center, center;
+    background-size: cover, cover, cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header#index{
+    height: 100vh;
+}
+
+.header#other{
+    height: 50vh;
 }
 
 .main{
@@ -34,13 +41,13 @@ body {
     background-image: url(images/tile-sayagata.png);
 }
 
-.center-750px{
+.center-800px{
     max-width: 750px;
-    margin: auto;
+    margin: auto auto;
 }
 
 .footer {
-    padding: 40px 70px;
+    padding: 50px 30px;
     background-color: rgba(213, 58, 42, 1);
 }
 
@@ -54,10 +61,12 @@ nav ul{
     list-style-type: none;
     width: inherit;
     height: inherit;
-    background-color: rgba(251, 252, 255, 0.8);
+    background-color: rgba(251, 252, 255, 1);
     overflow: hidden;
     float: right;
     margin: auto;
+    position: fixed;
+    padding: 0px;
 }
 
 nav ul li{
@@ -75,7 +84,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: rgba(251, 252, 255, .5);
+    background-color: rgba(213, 58, 42, .8);
+    color: #fff;
 }
 
 li.right{
@@ -87,19 +97,36 @@ li.right{
 }
 
 .hero-center{
-    margin: auto auto auto auto;
     display: block;
+    margin: auto auto;
+    margin-top: 25vh;
 }
 
-h1{
+h0{ /* titles of pages besides index */
+    font-family: 'Bungee', cursive;
+    font-size: 6em;
+    letter-spacing: .05em;
+    color: rgba(255,255,255,1);
+    margin-top: 25vh;
+}
+
+h1{ /* for nav bar use */
     font-family: 'Bungee', cursive;
     font-size: 1em;
     letter-spacing: .05em;
 }
 
-p{
+h2{ /* subtitles */
     font-family: 'Merriweather', serif;
+    font-weight: 900;
+    letter-spacing: .03em;
+    
+}
+
+p{ /* text */
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
     font-size: .9em;
     letter-spacing: .025em;
-    line-height: 1.8em;
+    line-height: 2em;
 }
